@@ -1,0 +1,7 @@
+SELECT Name AS Customers
+FROM Customers AS a
+LEFT JOIN Orders AS b
+ON a.Id = b.CustomerId
+WHERE b.CustomerId is null
+Accepted
+Runtime: 108 ms
